@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3537081428D425FA008DEED7 /* DailyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537081328D425FA008DEED7 /* DailyTask.swift */; };
+		3537081728D4284F008DEED7 /* DailyTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537081628D4284F008DEED7 /* DailyTaskView.swift */; };
+		3537081A28D42B3F008DEED7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537081928D42B3F008DEED7 /* Color.swift */; };
 		43B6C1AC28D41BFF002322B2 /* CalculuslyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6C1AB28D41BFF002322B2 /* CalculuslyApp.swift */; };
 		43B6C1AE28D41BFF002322B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6C1AD28D41BFF002322B2 /* ContentView.swift */; };
 		43B6C1B028D41C00002322B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B6C1AF28D41C00002322B2 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3537081328D425FA008DEED7 /* DailyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTask.swift; sourceTree = "<group>"; };
+		3537081628D4284F008DEED7 /* DailyTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskView.swift; sourceTree = "<group>"; };
+		3537081928D42B3F008DEED7 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		43B6C1A828D41BFF002322B2 /* Calculusly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculusly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B6C1AB28D41BFF002322B2 /* CalculuslyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculuslyApp.swift; sourceTree = "<group>"; };
 		43B6C1AD28D41BFF002322B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3537081228D425B9008DEED7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3537081328D425FA008DEED7 /* DailyTask.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3537081528D4278F008DEED7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3537081628D4284F008DEED7 /* DailyTaskView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3537081828D42B2C008DEED7 /* Branding */ = {
+			isa = PBXGroup;
+			children = (
+				3537081928D42B3F008DEED7 /* Color.swift */,
+			);
+			path = Branding;
+			sourceTree = "<group>";
+		};
 		43B6C19F28D41BFF002322B2 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +81,9 @@
 		43B6C1AA28D41BFF002322B2 /* Calculusly */ = {
 			isa = PBXGroup;
 			children = (
+				3537081828D42B2C008DEED7 /* Branding */,
+				3537081528D4278F008DEED7 /* Views */,
+				3537081228D425B9008DEED7 /* Models */,
 				43B6C1AB28D41BFF002322B2 /* CalculuslyApp.swift */,
 				43B6C1AD28D41BFF002322B2 /* ContentView.swift */,
 				43B6C1AF28D41C00002322B2 /* Assets.xcassets */,
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3537081428D425FA008DEED7 /* DailyTask.swift in Sources */,
 				43B6C1AE28D41BFF002322B2 /* ContentView.swift in Sources */,
 				43B6C1AC28D41BFF002322B2 /* CalculuslyApp.swift in Sources */,
+				3537081A28D42B3F008DEED7 /* Color.swift in Sources */,
+				3537081728D4284F008DEED7 /* DailyTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
