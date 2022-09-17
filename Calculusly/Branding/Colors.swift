@@ -1,5 +1,5 @@
 //
-//  Color.swift
+//  Colors.swift
 //  Calculusly
 //
 //  Created by Donovan Simpson on 9/15/22.

@@ -7,10 +7,18 @@
 
 import Foundation
 
-struct DailyTask {
+struct DailyTask: Identifiable {
+    let id: UUID
     var task: String
     var notes: String?
     var isCompleted: Bool
+    
+    init(id: UUID = UUID(), task: String, notes: String? = nil, isCompleted: Bool) {
+        self.id = id
+        self.task = task
+        self.notes = notes
+        self.isCompleted = isCompleted
+    }
 }
 
 extension DailyTask {

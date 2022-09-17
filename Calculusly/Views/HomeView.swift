@@ -1,21 +1,23 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Calculusly
 //
-//  Created by Aiden Park on 9/15/22.
+//  Created by Aiden Park on 9/17/22.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         Text("Baqua.exe has stopped working")
+            .font(.headline)
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
+
