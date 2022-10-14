@@ -12,8 +12,15 @@ import SwiftUI
 struct DailyTaskView: View {
     let dailyTask: DailyTask
     
+    @Binding var checked: Bool
+    
     var body: some View {
         HStack {
+            Image(systemName: checked ? "checkmark.square.fill" : "square")
+                .onTapGesture {
+                    self.checked.toggle()
+                }
+            
             VStack(alignment: .leading) {
                 Text(dailyTask.task)
                     .font(.headline)
@@ -38,7 +45,7 @@ struct DailyTaskView: View {
 struct DailyTaskView_Previews: PreviewProvider {
     static var dailyTask = DailyTask.sampleData[0]
     static var previews: some View {
-        DailyTaskView(dailyTask: dailyTask)
+        DailyTaskView(dailyTask: dailyTask, checked: .constant(false))
             .background(Colors().primary)
             .previewLayout(.fixed(width: 400, height: 60))
     }
