@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3510598928EFCB5F00E8D277 /* SchoolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510598828EFCB5F00E8D277 /* SchoolClass.swift */; };
+		3510598B28EFCB6900E8D277 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510598A28EFCB6900E8D277 /* Assignment.swift */; };
 		3537081428D425FA008DEED7 /* DailyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537081328D425FA008DEED7 /* DailyTask.swift */; };
 		3537081728D4284F008DEED7 /* DailyTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537081628D4284F008DEED7 /* DailyTaskView.swift */; };
 		3537081A28D42B3F008DEED7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537081928D42B3F008DEED7 /* Color.swift */; };
+		356FB6C028D6667E004CA468 /* DailyTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356FB6BF28D6667E004CA468 /* DailyTasksView.swift */; };
 		43B6C1AC28D41BFF002322B2 /* CalculuslyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6C1AB28D41BFF002322B2 /* CalculuslyApp.swift */; };
 		43B6C1AE28D41BFF002322B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6C1AD28D41BFF002322B2 /* ContentView.swift */; };
 		43B6C1B028D41C00002322B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B6C1AF28D41C00002322B2 /* Assets.xcassets */; };
@@ -17,9 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3510598828EFCB5F00E8D277 /* SchoolClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolClass.swift; sourceTree = "<group>"; };
+		3510598A28EFCB6900E8D277 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		3537081328D425FA008DEED7 /* DailyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTask.swift; sourceTree = "<group>"; };
 		3537081628D4284F008DEED7 /* DailyTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskView.swift; sourceTree = "<group>"; };
 		3537081928D42B3F008DEED7 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		356FB6BF28D6667E004CA468 /* DailyTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTasksView.swift; sourceTree = "<group>"; };
 		43B6C1A828D41BFF002322B2 /* Calculusly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculusly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B6C1AB28D41BFF002322B2 /* CalculuslyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculuslyApp.swift; sourceTree = "<group>"; };
 		43B6C1AD28D41BFF002322B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +48,8 @@
 			isa = PBXGroup;
 			children = (
 				3537081328D425FA008DEED7 /* DailyTask.swift */,
+				3510598828EFCB5F00E8D277 /* SchoolClass.swift */,
+				3510598A28EFCB6900E8D277 /* Assignment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -50,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				3537081628D4284F008DEED7 /* DailyTaskView.swift */,
+				356FB6BF28D6667E004CA468 /* DailyTasksView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,11 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3510598B28EFCB6900E8D277 /* Assignment.swift in Sources */,
 				3537081428D425FA008DEED7 /* DailyTask.swift in Sources */,
 				43B6C1AE28D41BFF002322B2 /* ContentView.swift in Sources */,
 				43B6C1AC28D41BFF002322B2 /* CalculuslyApp.swift in Sources */,
 				3537081A28D42B3F008DEED7 /* Color.swift in Sources */,
+				3510598928EFCB5F00E8D277 /* SchoolClass.swift in Sources */,
 				3537081728D4284F008DEED7 /* DailyTaskView.swift in Sources */,
+				356FB6C028D6667E004CA468 /* DailyTasksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

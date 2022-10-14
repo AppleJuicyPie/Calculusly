@@ -15,30 +15,38 @@ struct DailyTaskView: View {
     @Binding var checked: Bool
     
     var body: some View {
-        HStack {
-            Image(systemName: checked ? "checkmark.square.fill" : "square")
-                .onTapGesture {
-                    self.checked.toggle()
-                }
-            
-            VStack(alignment: .leading) {
-                Text(dailyTask.task)
-                    .font(.headline)
-                
-                Spacer()
+        RoundedRectangle(cornerRadius: 20)
+            .foregroundColor(Colors().primary)
+            .overlay {
+                HStack {
+                    Image(systemName: checked ? "checkmark.square.fill" : "square")
+                        .onTapGesture {
+                            self.checked.toggle()
+                        }
                     
-                if let notes = dailyTask.notes {
-                    Text(notes)
-                        .font(.caption)
-                        .lineLimit(1)
+                    VStack(alignment: .leading) {
+                        Text(dailyTask.task)
+                            .font(.headline)
+                        
+                        Spacer()
+                            
+                        if let notes = dailyTask.notes {
+                            Text(notes)
+                                .font(.caption)
+                                .lineLimit(1)
+                        }
+                    }
+                    Spacer()
+                    
+                    Image(systemName: "arrow.forward")
                 }
+                .padding()
+                .edgesIgnoringSafeArea(.all)
             }
-            Spacer()
-            
-            Image(systemName: "arrow.forward")
-        }
-        .padding()
-        .edgesIgnoringSafeArea(.all)
+            .background(RoundedRectangle(cornerRadius: 20)
+                            .fill(Color(.darkGray))
+                            .shadow(color: .black, radius: 4, x: 0, y: 4)
+            )
     }
 }
 
@@ -46,7 +54,6 @@ struct DailyTaskView_Previews: PreviewProvider {
     static var dailyTask = DailyTask.sampleData[0]
     static var previews: some View {
         DailyTaskView(dailyTask: dailyTask, checked: .constant(false))
-            .background(Colors().primary)
             .previewLayout(.fixed(width: 400, height: 60))
     }
 }
